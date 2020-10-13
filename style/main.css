@@ -1,3 +1,41 @@
+/* limpa estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variáveis */
+:root {
+  --vermelho: #e50914;
+  --preto: #141414;
+}
+
 body {
-  background-color: blue;
+  background-color: var(--preto);
+  font-family: 'Time New Roman', Times, serif;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo {
+  margin-left: 10px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', Times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none; /* retira sublinhado dos links */
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover { /* altera a cor com o mouse */
+  color: #fff;
 }
