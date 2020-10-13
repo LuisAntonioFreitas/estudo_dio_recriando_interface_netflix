@@ -95,3 +95,9 @@ header nav a:hover { /* altera a cor com o mouse */
   background-color: white;
   color: black;
 }
+
+.box-filme {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
