@@ -11,9 +11,11 @@
   --preto: #141414;
 }
 
+/* elementos base */
 body {
   background-color: var(--preto);
   font-family: 'Time New Roman', Times, serif;
+  color: white;
 }
 
 header .container {
@@ -38,4 +40,32 @@ header nav a {
 
 header nav a:hover { /* altera a cor com o mouse */
   color: #fff;
+}
+
+/* filme principal */
+.filme-principal {
+  font-size: 16px;
+
+  /* gera um evento de escurecimento na imagen */
+  background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.30)100%), 
+              url('../img/capa-house.jpg');
+  height: 400px;
+  background-size: cover;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+  font-size: 40px;
+}
+
+.filme-principal .botoes {
+
 }
